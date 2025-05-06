@@ -26,15 +26,24 @@ namespace BDDSampleProject.Acceptance.Tests.StepDefinitions
         }
 
         [Given("The first number is {int}")]
-        public void GivenTheFirstNumberIs(int first)
+        public void GivenTheFirstNumberIs(int leftMember)
         {
-            GetCalculator().AddLeftMember(first);
+            GetCalculator().AddLeftMember(leftMember);
         }
 
         [Given("The second number is {int}")]
-        public void GivenTheSecondNumberIs(int second)
+        public void GivenTheSecondNumberIs(int rightMember)
         {
-            GetCalculator().AddRightMember(second);
+            GetCalculator().AddRightMember(rightMember);
+        }
+
+        [Given("The operation : {int} {string} {int}")]
+        public void GivenAnOperation(int leftMember, string operation, int rightMember)
+        {
+            GetCalculator().AddLeftMember(leftMember);
+            GetCalculator().AddRightMember(rightMember);
+            var operationType = Enum.Parse<OperationType>(operation);
+            _result = GetCalculator().MakeOperation(operationType);
         }
 
         [When("I make the Operation {string}")]
@@ -50,22 +59,6 @@ namespace BDDSampleProject.Acceptance.Tests.StepDefinitions
                 _context.Add("Exception", e);
             }
         }
-
-        [Given("{string} load the calculator")]
-        public void GivenLoadTheCalculator(string personna)
-        {
-            if (string.IsNullOrEmpty(personna))
-                return;
-            if (personna == "NoOne")
-            {
-                _calculator = new NotAvailableCalculator();
-            }
-            else if (personna == "Bob")
-            {
-                _calculator = new Calculator(new List<IOperation>());
-            }
-        }
-
 
         [Then("The result should be {int}")]
         public void ThenTheResultShouldBe(int result)

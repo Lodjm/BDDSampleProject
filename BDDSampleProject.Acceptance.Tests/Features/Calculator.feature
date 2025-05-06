@@ -31,6 +31,7 @@ Scenario: Divide one integer to another one
 	When I make the Operation "Divide"
 	Then The result should be 2
 
+@CalculatorBackground
 Rule: Inversed Calculator
 Background: 
 	Given A DivideOperation with Type "Multiply"

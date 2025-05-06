@@ -235,8 +235,9 @@ this.ScenarioInitialize(scenarioInfo);
         {
             string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            global::Reqnroll.ScenarioInfo scenarioInfo = new global::Reqnroll.ScenarioInfo("Add two integers and retrieve the result of a substract", null, tagsOfScenario, argumentsOfScenario, featureTags);
-#line 42
+            global::Reqnroll.ScenarioInfo scenarioInfo = new global::Reqnroll.ScenarioInfo("Add two integers and retrieve the result of a substract", null, tagsOfScenario, argumentsOfScenario, TagHelper.CombineTags(featureTags, new string[] {
+                            "CalculatorBackground"}));
+#line 43
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             if ((global::Reqnroll.TagHelper.ContainsIgnoreTag(scenarioInfo.CombinedTags) || global::Reqnroll.TagHelper.ContainsIgnoreTag(featureTags)))
@@ -246,31 +247,31 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 await this.ScenarioStartAsync();
-#line 36
+#line 37
  await testRunner.GivenAsync("A DivideOperation with Type \"Multiply\"", ((string)(null)), ((global::Reqnroll.Table)(null)), "Given ");
 #line hidden
-#line 37
+#line 38
  await testRunner.AndAsync("A MultiplyOperation with Type \"Divide\"", ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
 #line hidden
-#line 38
+#line 39
  await testRunner.AndAsync("A AddOperation with Type \"Substract\"", ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
 #line hidden
-#line 39
+#line 40
  await testRunner.AndAsync("A SubstractOperation with Type \"Add\"", ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
 #line hidden
-#line 40
+#line 41
  await testRunner.AndAsync("A Calculator with operations defined", ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
 #line hidden
-#line 43
+#line 44
  await testRunner.GivenAsync("The first number is 3", ((string)(null)), ((global::Reqnroll.Table)(null)), "Given ");
 #line hidden
-#line 44
+#line 45
  await testRunner.AndAsync("The second number is 2", ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
 #line hidden
-#line 45
+#line 46
  await testRunner.WhenAsync("I make the Operation \"Add\"", ((string)(null)), ((global::Reqnroll.Table)(null)), "When ");
 #line hidden
-#line 46
+#line 47
  await testRunner.ThenAsync("The result should be 1", ((string)(null)), ((global::Reqnroll.Table)(null)), "Then ");
 #line hidden
             }
@@ -284,8 +285,9 @@ this.ScenarioInitialize(scenarioInfo);
         {
             string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            global::Reqnroll.ScenarioInfo scenarioInfo = new global::Reqnroll.ScenarioInfo("Substract two integers and retrieve the result of an addition", null, tagsOfScenario, argumentsOfScenario, featureTags);
-#line 48
+            global::Reqnroll.ScenarioInfo scenarioInfo = new global::Reqnroll.ScenarioInfo("Substract two integers and retrieve the result of an addition", null, tagsOfScenario, argumentsOfScenario, TagHelper.CombineTags(featureTags, new string[] {
+                            "CalculatorBackground"}));
+#line 49
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             if ((global::Reqnroll.TagHelper.ContainsIgnoreTag(scenarioInfo.CombinedTags) || global::Reqnroll.TagHelper.ContainsIgnoreTag(featureTags)))
@@ -295,31 +297,31 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 await this.ScenarioStartAsync();
-#line 36
+#line 37
  await testRunner.GivenAsync("A DivideOperation with Type \"Multiply\"", ((string)(null)), ((global::Reqnroll.Table)(null)), "Given ");
 #line hidden
-#line 37
+#line 38
  await testRunner.AndAsync("A MultiplyOperation with Type \"Divide\"", ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
 #line hidden
-#line 38
+#line 39
  await testRunner.AndAsync("A AddOperation with Type \"Substract\"", ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
 #line hidden
-#line 39
+#line 40
  await testRunner.AndAsync("A SubstractOperation with Type \"Add\"", ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
 #line hidden
-#line 40
+#line 41
  await testRunner.AndAsync("A Calculator with operations defined", ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
 #line hidden
-#line 49
+#line 50
  await testRunner.GivenAsync("The first number is 3", ((string)(null)), ((global::Reqnroll.Table)(null)), "Given ");
 #line hidden
-#line 50
+#line 51
  await testRunner.AndAsync("The second number is 2", ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
 #line hidden
-#line 51
+#line 52
  await testRunner.WhenAsync("I make the Operation \"Substract\"", ((string)(null)), ((global::Reqnroll.Table)(null)), "When ");
 #line hidden
-#line 52
+#line 53
  await testRunner.ThenAsync("The result should be 5", ((string)(null)), ((global::Reqnroll.Table)(null)), "Then ");
 #line hidden
             }
@@ -333,8 +335,9 @@ this.ScenarioInitialize(scenarioInfo);
         {
             string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            global::Reqnroll.ScenarioInfo scenarioInfo = new global::Reqnroll.ScenarioInfo("Multiply one integer to another one and retrieve the result of an Divide", null, tagsOfScenario, argumentsOfScenario, featureTags);
-#line 54
+            global::Reqnroll.ScenarioInfo scenarioInfo = new global::Reqnroll.ScenarioInfo("Multiply one integer to another one and retrieve the result of an Divide", null, tagsOfScenario, argumentsOfScenario, TagHelper.CombineTags(featureTags, new string[] {
+                            "CalculatorBackground"}));
+#line 55
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             if ((global::Reqnroll.TagHelper.ContainsIgnoreTag(scenarioInfo.CombinedTags) || global::Reqnroll.TagHelper.ContainsIgnoreTag(featureTags)))
@@ -344,31 +347,31 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 await this.ScenarioStartAsync();
-#line 36
+#line 37
  await testRunner.GivenAsync("A DivideOperation with Type \"Multiply\"", ((string)(null)), ((global::Reqnroll.Table)(null)), "Given ");
 #line hidden
-#line 37
+#line 38
  await testRunner.AndAsync("A MultiplyOperation with Type \"Divide\"", ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
 #line hidden
-#line 38
+#line 39
  await testRunner.AndAsync("A AddOperation with Type \"Substract\"", ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
 #line hidden
-#line 39
+#line 40
  await testRunner.AndAsync("A SubstractOperation with Type \"Add\"", ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
 #line hidden
-#line 40
+#line 41
  await testRunner.AndAsync("A Calculator with operations defined", ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
 #line hidden
-#line 55
+#line 56
  await testRunner.GivenAsync("The first number is 6", ((string)(null)), ((global::Reqnroll.Table)(null)), "Given ");
 #line hidden
-#line 56
+#line 57
  await testRunner.AndAsync("The second number is 2", ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
 #line hidden
-#line 57
+#line 58
  await testRunner.WhenAsync("I make the Operation \"Multiply\"", ((string)(null)), ((global::Reqnroll.Table)(null)), "When ");
 #line hidden
-#line 58
+#line 59
  await testRunner.ThenAsync("The result should be 3", ((string)(null)), ((global::Reqnroll.Table)(null)), "Then ");
 #line hidden
             }
@@ -382,8 +385,9 @@ this.ScenarioInitialize(scenarioInfo);
         {
             string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            global::Reqnroll.ScenarioInfo scenarioInfo = new global::Reqnroll.ScenarioInfo("Divide one integer to another one and retrieve the result of an Multiply", null, tagsOfScenario, argumentsOfScenario, featureTags);
-#line 60
+            global::Reqnroll.ScenarioInfo scenarioInfo = new global::Reqnroll.ScenarioInfo("Divide one integer to another one and retrieve the result of an Multiply", null, tagsOfScenario, argumentsOfScenario, TagHelper.CombineTags(featureTags, new string[] {
+                            "CalculatorBackground"}));
+#line 61
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             if ((global::Reqnroll.TagHelper.ContainsIgnoreTag(scenarioInfo.CombinedTags) || global::Reqnroll.TagHelper.ContainsIgnoreTag(featureTags)))
@@ -393,31 +397,31 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 await this.ScenarioStartAsync();
-#line 36
+#line 37
  await testRunner.GivenAsync("A DivideOperation with Type \"Multiply\"", ((string)(null)), ((global::Reqnroll.Table)(null)), "Given ");
 #line hidden
-#line 37
+#line 38
  await testRunner.AndAsync("A MultiplyOperation with Type \"Divide\"", ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
 #line hidden
-#line 38
+#line 39
  await testRunner.AndAsync("A AddOperation with Type \"Substract\"", ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
 #line hidden
-#line 39
+#line 40
  await testRunner.AndAsync("A SubstractOperation with Type \"Add\"", ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
 #line hidden
-#line 40
+#line 41
  await testRunner.AndAsync("A Calculator with operations defined", ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
 #line hidden
-#line 61
+#line 62
  await testRunner.GivenAsync("The first number is 3", ((string)(null)), ((global::Reqnroll.Table)(null)), "Given ");
 #line hidden
-#line 62
+#line 63
  await testRunner.AndAsync("The second number is 2", ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
 #line hidden
-#line 63
+#line 64
  await testRunner.WhenAsync("I make the Operation \"Divide\"", ((string)(null)), ((global::Reqnroll.Table)(null)), "When ");
 #line hidden
-#line 64
+#line 65
  await testRunner.ThenAsync("The result should be 6", ((string)(null)), ((global::Reqnroll.Table)(null)), "Then ");
 #line hidden
             }

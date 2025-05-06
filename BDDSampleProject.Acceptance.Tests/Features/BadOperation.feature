@@ -10,6 +10,7 @@ Scenario: Add two integers and retrieve the sum
 
 @BadCalculator
 Scenario: Substract one integer to another one
+#Substract is strange but cool
 	Given The first number is 3
 	And The second number is 2
 	When I make the Operation "Substract"
